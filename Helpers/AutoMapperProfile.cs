@@ -1,5 +1,6 @@
 using AutoMapper;
 using AssetB.DTO.Users;
+using AssetB.DTO;
 using AssetB.Models;
 
 namespace AssetB.Helpers
@@ -10,6 +11,9 @@ namespace AssetB.Helpers
             CreateMap<User, UserDTO>();
             CreateMap<RegisterDTO, User>();
             CreateMap<UpdateUserDTO, User>();
+
+            CreateMap<AssetMaintain, AssetMaintainDTO>();
+            CreateMap<AssetMaintainDTO, AssetMaintain>();
         }
         
     }

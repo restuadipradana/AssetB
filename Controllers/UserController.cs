@@ -91,8 +91,9 @@ namespace AssetB.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
+            //ambil data dari usermodel(users), lempar jadi userDTO (model)
             var users = _userService.GetAll();
-            var model = _mapper.Map<IList<UserDTO>>(users);
+            var model = _mapper.Map<IList<UserDTO>>(users); 
             return Ok(model);
         }
 
